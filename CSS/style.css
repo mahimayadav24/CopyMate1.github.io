@@ -139,9 +139,23 @@
     font-family: 'Nunito__Black';
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
     .col__lm__lm {
-        width: 100vw;
+        width: 80vw;
+        height: 100vh;
+    }
+    .Text__container {
+        max-width: 65%;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1280px) {
+    .Text__container {
+        max-width: 70%;
+    }
+    .Flex__lg__sm {
+        padding: 30px 80px 30px 21px;
+        max-width: 79%;
     }
 }
 
@@ -308,13 +322,6 @@
     .col__sm__sm {
         padding: 60px 10px 60px 10px;
     }
-    .Text__container {
-        max-width: 50%;
-    }
-    .Flex__lg__sm {
-        padding: 30px 80px 30px 21px;
-        max-width: 57%;
-    }
     .flex__sm__bg {
         margin-left: -1rem;
     }
@@ -410,7 +417,7 @@
 
 .btn__left {
     border: none;
-    padding: 10px 25px 10px 25px;
+    padding: 10px 80px 10px 80px;
     color: #FFFFFF;
     background-color: #FD738F;
     border-radius: 20px;
@@ -426,7 +433,7 @@
 
 .btn__right {
     border: none;
-    padding: 10px 25px 10px 25px;
+    padding: 10px 30px 10px 30px;
     color: #828282;
     background-color: #E7E7E7;
     border-radius: 20px;
@@ -611,6 +618,12 @@ input[type=email], select {
     }
 }
 
+@media screen and (max-width: 1368px) {
+    .col__lm__lm{
+        height: 81.3vh;
+    }
+}
+
 @media screen and (max-width:568px) {
     .btn__right {
         margin: 10px 0px 10px 0px;
@@ -623,3 +636,27 @@ input[type=email], select {
         width: 100%;
     }
 }
+
+.flex__sm__lg span {
+    font-family: 'Nunito__Black';
+    color: #FF7195;
+}
+
+.btn__left span {
+    font-family: 'Nunito__Black';
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .col__lm__lm {
+        height: 30vh;
+        transform: translateX(-23%);
+    }
+}
+
+/* 
+@media screen and (max-width:568px) {
+    .col__lm__lm {
+        transform: translateX(-38%);
+    }
+} */
