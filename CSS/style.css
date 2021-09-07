@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+* {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+:root {
+    --h1: calc(32pt + 0.15vw);
+    --h1-mob: calc(10pt + 0.15vw);
+    --h1-Ipad: calc(18pt + 0.15vw);
+    --h2: calc(20pt + 0.15vw);
+    --h2-mob: calc(10pt + 0.15vw);
+    --h2-Ipad: calc(18pt + 0.15vw);
+    --h3: calc(19pt + 0.15vw);
+    --h3-mob: calc(10pt + 0.15vw);
+    --h3-Ipad: calc(16pt + 0.15vw);
+    --para: calc(14pt + 0.15vw);
+    --para-mob: calc(10pt + 0.15vw);
+    --para-Ipad: calc(14pt + 0.15vw);
+}
+
+#Bg__beauty {
+    background-image: url('../Assets/BG Img/Rectangle 5.png');
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+@media screen and (max-width: 1080px) {
+    #Bg__beauty {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.content {
+    background-color: #7b287dd1;
+    color: white;
+}
+
+.Row__lg__sm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.col__lg__sm {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.col__sm__sm {
+    position: absolute;
+    width: 100%;
+    padding: 60px 50px 60px 50px;
+    height: auto;
+}
+
+.Para__container {
+    position: absolute;
+}
+
+.col__lm__lm {
+    background-image: url('../Assets/BG Img/beautiful-woman-with-evening-make-up-jewelry-beauty-fashion-photo 1.png');
+    height: 100vh;
+    width: 80vw;
+    background-size: cover;
+    /* position: absolute;
+    right: 0; */
+    z-index: 9;
+    margin-left: -28rem;
+}
+
+.Text__container {
+    max-width: 55%;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.Text__container h1 {
+    font-size: var(--h1);
+    line-height: 1.2195;
+    letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1400px) {
+    .col__lm__lm {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .col__lm__lm {
+        background-image: url('../Assets/BG Img/beautiful-woman-with-evening-make-up-jewelry-beauty-fashion-photo 1.png');
+        height: 100vh;
+        width: 90%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .Text__container h1 br {
+        display: none;
+    }
+    .Text__container h1 {
+        font-size: var(--h1-Ipad);
+    }
+    .col__sm__sm {
+        padding: 60px 20px 60px 20px;
+    }
+    .Text__container {
+        max-width: 50%;
+        padding: 10px 10px 10px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Text__container {
+        max-width: 54%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .col__sm__sm {
+        padding: 60px 10px 60px 10px;
+    }
+    .Text__container h1 {
+        font-size: var(--h1-mob);
+    }
+    .Text__container {
+        max-width: 60%;
+    }
+}
+
+.Flex__lg__sm {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 60%;
+    width: 100%;
+    text-align: center;
+}
+
+.Flex__lg__sm h2 {
+    font-size: var(--h2);
+    font-weight: 400;
+    color: #4E0C47;
+    line-height: 1.2195;
+    letter-spacing: 0.03em;
+}
+
+.Flex__lg__sm {
+    padding: 30px 110px 30px 110px;
+}
+
+.Flex__lg__sm span {
+    font-weight: 500;
+    color: #4E0C47;
+}
+
+@media screen and (max-width: 1080px) {
+    .Flex__lg__sm h2 {
+        font-size: var(--h2-Ipad);
+    }
+    .Flex__lg__sm {
+        padding: 20px 40px 20px 40px;
+        max-width: 55%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Flex__lg__sm {
+        padding: 20px 10px 20px 10px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .Flex__lg__sm {
+        padding: 10px 10px 10px 10px;
+        max-width: 60%;
+    }
+    .Flex__lg__sm h2 {
+        font-size: var(--h2-mob);
+    }
+    .col__sm__sm {
+        top: -25px;
+    }
+    .Text__container {
+        padding: 10px 15px 10px 15px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .Text__container {
+        padding: 10px 22px 10px 22px;
+        max-width: 58%;
+    }
+}
+
+.flex__sm__lg h3 {
+    font-size: var(--h3);
+    color: #FF7195;
+    line-height: 1.2195;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+}
+
+@media screen and (max-width:1080px) {
+    .flex__sm__lg {
+        max-width: 60%;
+    }
+    .flex__sm__lg h3 {
+        font-size: var(--h3-Ipad);
+    }
+}
+
+@media screen and (max-width:640px) {
+    .flex__sm__lg h3 {
+        font-size: var(--h3-mob);
+    }
+    .flex__sm__lg {
+        max-width: 100%;
+    }
+}
+
+.flex__sm__bg p {
+    font-size: var(--para);
+    line-height: 1.2195;
+    letter-spacing: 0.03em;
+    color: #4E0C47;
+    padding: 20px 20px 20px 20px;
+}
+
+.flex__sm__bg {
+    max-width: 50%;
+    padding: 0px 35px 0px 35px;
+    background-color: #FFE2E2;
+    margin-left: -3rem;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1280px) {
+    .col__sm__sm {
+        padding: 60px 10px 60px 10px;
+    }
+    .Text__container {
+        max-width: 50%;
+    }
+    .Flex__lg__sm {
+        padding: 30px 80px 30px 21px;
+        max-width: 57%;
+    }
+    .flex__sm__bg {
+        margin-left: -1rem;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .flex__sm__bg {
+        max-width: 60%;
+    }
+    .flex__sm__bg p {
+        font-size: var(--para-Ipad);
+    }
+    .flex__sm__bg {
+        margin-left: -1rem;
+    }
+    .flex__sm__bg {
+        padding: 0px 5px 0px 5px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .flex__sm__bg {
+        max-width: 100%;
+        padding: 30px 0px 30px 0px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .flex__sm__bg {
+        max-width: 100%;
+        padding: 0px 0px 0px 0px;
+    }
+    .flex__sm__bg p {
+        font-size: var(--para-mob);
+    }
+}
+
+.flex__bg__lg {
+    background-color: #7b287dd1;
+    color: white;
+    margin-left: -3.10rem;
+    width: 100vw;
+    padding: 30px 50px 30px 50px;
+    transform: translateY(20px);
+    height: auto;
+}
+
+.flex__bg__lg h3 {
+    font-size: var(--h3);
+    line-height: 1.2195;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    padding: ;
+}
+
+.flex__bg__lg p {
+    font-size: var(--para);
+    line-height: 1.2195;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+}
+
+@media screen and (max-width:1080px) {
+    .flex__bg__lg {
+        margin-left: -1rem;
+    }
+    .flex__bg__lg h3 {
+        font-size: var(--h3-Ipad);
+    }
+    .flex__bg__lg p {
+        font-size: var(--para-Ipad);
+    }
+}
+
+@media screen and (max-width:640px) {
+    .flex__bg__lg {
+        margin-left: -1rem;
+    }
+    .flex__bg__lg h3 {
+        font-size: var(--h3-mob);
+    }
+    .flex__bg__lg p {
+        font-size: var(--para-mob);
+    }
+}
+
+.btn__btn {
+    margin: 20px 0px 20px 0px;
+}
+
+.btn__left {
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFFFFF;
+    background-color: #FD738F;
+    border-radius: 20px;
+    /* margin: 0px 10px 0px 10px; */
+    font-size: var(--para);
+    margin: 0px 0px 0px 0px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: .3s ease-in;
+}
+
+.btn__right {
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #828282;
+    background-color: #E7E7E7;
+    border-radius: 20px;
+    margin: 0px 10px 0px 10px;
+    font-size: var(--para);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: .3s ease-in;
+}
+
+@media screen and (max-width:1080px) {
+    .btn__right {
+        font-size: var(--para-Ipad);
+        margin: 0px 10px 0px 10px;
+    }
+    .btn__left {
+        font-size: var(--para-Ipad);
+    }
+}
+
+@media screen and (max-width:640px) {
+    .btn__right {
+        font-size: var(--para-mob);
+        margin: 10px 0px 10px 0px;
+    }
+    .btn__left {
+        font-size: var(--para-mob);
+    }
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1440px) {
+    .col__lm__lm {
+        margin-left: -26rem;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .col__lm__lm {
+        margin-left: -38rem;
+        height: 128vh;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .col__lm__lm {
+        margin-left: -35rem;
+    }
+    .flex__bg__lg {
+        margin-left: -0.70rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .col__lm__lm {
+        margin-left: -22rem;
+        width: 171%;
+    }
+    .flex__bg__lg {
+        padding: 30px 20px 30px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col__lm__lm {
+        margin-left: -17rem;
+        width: 171%;
+    }
+    .flex__bg__lg {
+        margin-left: -1.25rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .col__lm__lm {
+        margin-left: -0.5rem;
+        width: 106%;
+    }
+    .flex__bg__lg {
+        margin-left: -0.65rem;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .col__lm__lm {
+        margin-left: -7.50rem;
+        width: 171%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .col__lm__lm {
+        margin-left: -7rem;
+        width: 171%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .col__lm__lm {
+        margin-left: -6rem;
+        width: 171%;
+    }
+}
+
+.flex__bg__lg input {
+    outline: none;
+    border-radius: 20px;
+    font-size: var(--para);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 44%;
+    color: #686868;
+    background-color: #FEF5F6;
+}
+
+@media screen and (max-width:1080px) {
+    .flex__bg__lg input {
+        width: 100%;
+        font-size: var(--para-Ipad);
+    }
+}
+
+@media screen and (max-width:640px) {
+    .flex__bg__lg input {
+        font-size: var(--para-mob);
+    }
+}
+
+.btn__left:hover {
+    transform: scale(0.95);
+}
+
+.btn__right:hover {
+    transform: scale(0.95);
+}
