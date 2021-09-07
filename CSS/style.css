@@ -1,10 +1,29 @@
+@font-face {
+    font-family: Nunito__Light;
+    src: url('../Fonts/NunitoSans-Light.ttf');
+}
+
+@font-face {
+    font-family: Nunito__Regular;
+    src: url('../Fonts/NunitoSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: Nunito__semiBold;
+    src: url('../Fonts/NunitoSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Nunito__Black;
+    src: url('../Fonts/NunitoSans-Black.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -99,11 +118,11 @@
 
 .col__lm__lm {
     background-image: url('../Assets/BG Img/beautiful-woman-with-evening-make-up-jewelry-beauty-fashion-photo 1.png');
-    height: 100vh;
+    height: 115vh;
     width: 80vw;
     background-size: cover;
     z-index: 9;
-    margin-left: -28rem;
+    transform: translateX(-37%);
 }
 
 .Text__container {
@@ -117,6 +136,7 @@
     font-size: var(--h1);
     line-height: 1.2195;
     letter-spacing: 0.03em;
+    font-family: 'Nunito__Black';
 }
 
 @media screen and (max-width: 1400px) {
@@ -183,7 +203,7 @@
 
 .Flex__lg__sm h2 {
     font-size: var(--h2);
-    font-weight: 400;
+    font-family: 'Nunito__Regular';
     color: #4E0C47;
     line-height: 1.2195;
     letter-spacing: 0.03em;
@@ -194,7 +214,7 @@
 }
 
 .Flex__lg__sm span {
-    font-weight: 500;
+    font-family: 'Nunito__Black';
     color: #4E0C47;
 }
 
@@ -242,7 +262,7 @@
     color: #FF7195;
     line-height: 1.2195;
     letter-spacing: 0.03em;
-    font-weight: 400;
+    font-family: 'Nunito__Regular';
 }
 
 @media screen and (max-width:1080px) {
@@ -269,6 +289,12 @@
     letter-spacing: 0.03em;
     color: #4E0C47;
     padding: 20px 20px 20px 20px;
+    font-family: 'Nunito__Regular';
+}
+
+.flex__sm__bg span {
+    font-family: 'Nunito__Black';
+    color: #4E0C47;
 }
 
 .flex__sm__bg {
@@ -331,26 +357,27 @@
     color: white;
     margin-left: -3.10rem;
     width: 100vw;
-    padding: 30px 50px 30px 50px;
     -webkit-transform: translateY(20px);
     -ms-transform: translateY(20px);
     transform: translateY(20px);
     height: auto;
+    padding: 20px 50px 20px 50px;
 }
 
 .flex__bg__lg h3 {
     font-size: var(--h3);
     line-height: 1.2195;
     letter-spacing: 0.03em;
-    font-weight: 400;
-    padding: ;
+    font-family: 'Nunito__semiBold';
+    padding: 0px 10px 0px 10px;
 }
 
 .flex__bg__lg p {
     font-size: var(--para);
     line-height: 1.2195;
     letter-spacing: 0.03em;
-    font-weight: 400;
+    font-family: 'Nunito__Regular';
+    padding: 0px 10px 0px 10px;
 }
 
 @media screen and (max-width:1080px) {
@@ -394,6 +421,7 @@
     -webkit-transition: .3s ease-in;
     -o-transition: .3s ease-in;
     transition: .3s ease-in;
+    font-family: 'Nunito__Regular';
 }
 
 .btn__right {
@@ -402,13 +430,14 @@
     color: #828282;
     background-color: #E7E7E7;
     border-radius: 20px;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 23px;
     font-size: var(--para);
     -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     -webkit-transition: .3s ease-in;
     -o-transition: .3s ease-in;
     transition: .3s ease-in;
+    font-family: 'Nunito__Regular';
 }
 
 @media screen and (max-width:1080px) {
@@ -440,24 +469,28 @@ input[type=email], select {
     border-radius: 4px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: 'Nunito__Regular';
 }
 
 @media screen and (max-width: 1440px) {
     .col__lm__lm {
-        margin-left: -26rem;
+        /* margin-left: -26rem; */
+        /* transform: translateX(-44%); */
+        height: 96.65vh;
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1368px) {
     .col__lm__lm {
-        margin-left: -38rem;
-        height: 128vh;
+        /* margin-left: -38rem; */
+        height: 84.7vh;
     }
 }
 
 @media screen and (max-width: 1280px) {
     .col__lm__lm {
-        margin-left: -35rem;
+        /* margin-left: -35rem; */
+        height: 115.1vh;
     }
     .flex__bg__lg {
         margin-left: -0.70rem;
@@ -466,8 +499,9 @@ input[type=email], select {
 
 @media screen and (max-width: 1080px) {
     .col__lm__lm {
-        margin-left: -22rem;
+        /* margin-left: -22rem; */
         width: 171%;
+        transform: translateX(-40%);
     }
     .flex__bg__lg {
         padding: 30px 20px 30px 20px;
@@ -476,7 +510,7 @@ input[type=email], select {
 
 @media screen and (max-width: 768px) {
     .col__lm__lm {
-        margin-left: -17rem;
+        /* margin-left: -17rem; */
         width: 171%;
     }
     .flex__bg__lg {
@@ -496,14 +530,17 @@ input[type=email], select {
 
 @media screen and (max-width: 568px) {
     .col__lm__lm {
-        margin-left: -7.50rem;
+        /* margin-left: -7.50rem; */
         width: 171%;
+    }
+    .flex__bg__lg {
+        padding: 20px 10px 20px 10px;
     }
 }
 
 @media screen and (max-width: 320px) {
     .col__lm__lm {
-        margin-left: -7rem;
+        /* margin-left: -7rem; */
         width: 171%;
     }
 }
@@ -521,21 +558,33 @@ input[type=email], select {
     font-size: var(--para);
     -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    width: 44%;
+    /* width: 44%; */
     color: #686868;
     background-color: #FEF5F6;
 }
 
+.flex__bg__lg form {
+    max-width: 650px;
+    width: 100%;
+}
+
 @media screen and (max-width:1080px) {
     .flex__bg__lg input {
-        width: 100%;
+        /* width: 100%; */
         font-size: var(--para-Ipad);
+    }
+    .btn__right {
+        margin: 10px 21px 10px 21px;
     }
 }
 
 @media screen and (max-width:640px) {
     .flex__bg__lg input {
         font-size: var(--para-mob);
+    }
+    .flex__bg__lg form {
+        max-width: 650px;
+        width: 90%;
     }
 }
 
@@ -549,4 +598,28 @@ input[type=email], select {
     -webkit-transform: scale(0.95);
     -ms-transform: scale(0.95);
     transform: scale(0.95);
+}
+
+.Wrapper__Div {
+    max-width: 1600px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1400px) {
+    .col__lm__lm {
+        height: 131.30vh;
+    }
+}
+
+@media screen and (max-width:568px) {
+    .btn__right {
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .flex__bg__lg form {
+        max-width: 830px;
+        width: 100%;
+    }
 }
